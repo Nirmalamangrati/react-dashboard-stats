@@ -10,7 +10,12 @@ export default function Sidebar() {
   return (
     <div className="w-20 h-screen border-r flex flex-col hover:border-3 hover:border-purple-500 transition">
       <div className="flex justify-center py-4">
-        <div className="font-bold text-lg">Logo</div>
+        <div className="font-bold text-lg">
+          <img
+            src="src/images/Screenshot 2026-02-02 123311.png"
+            className="w-30 h-18 object-contain border-3 border-transparent hover:border-dotted hover:border-purple-500 transition "
+          />
+        </div>
       </div>
       <div className="flex flex-col items-center justify-center flex-grow gap-6">
         <HomeIcon className="w-6 h-6 text-gray-700 cursor-pointer" />

@@ -3,6 +3,7 @@ import AccountCard from "@/components/AccountCard";
 import TransactionCard from "@/components/ui/TransactionCard";
 import StatsChart from "@/components/ui/StatsChart";
 import { SelectDemo } from "@/components/SelectDemo";
+import { BellIcon, HomeIcon } from "lucide-react";
 
 export default function Dashboard() {
   return (
@@ -14,12 +15,13 @@ export default function Dashboard() {
             Good Morning, Jane.
           </h1>
 
-          <div className="flex items-center gap-3 group-hover:border group-hover:border-purple-500 group-hover:border-dashed px-2 py-1 ">
-            <p className="text-sm font-medium text-gray-600">
+          <div className="flex items-center gap-8 group-hover:border group-hover:border-purple-500 group-hover:border-dashed px-2 py-1 ">
+            <p className="text-sm font-medium font-bold">
               Friday, 19 Jan, 2024
             </p>
+            <BellIcon className="w-6 h-6 text-gray-700 cursor-pointer" />
             <img
-              src="/images/pic.jpg"
+              src="src/images/pic.jpg"
               alt="Profile"
               className="w-9 h-9 rounded-full object-cover"
             />
@@ -29,14 +31,36 @@ export default function Dashboard() {
           <div className="flex flex-col gap-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="grid grid-cols-1">
-                <div className=" p-4 w-full hover:border-3 hover:border-blue-400 transition">
-                  <h2 className="text-lg font-bold">Savings Rs. 23,000</h2>
-                  <p className="text-gray-400 text-xs mt-1">
-                    Savings for this month so far
-                  </p>
+                <div className="flex items-start mt-8 p-4 mb-6 w-full  ">
+                  <div className="  hover:border-3 hover:border-blue-400 transition">
+                    <h2 className="w-[800px] h-[30px] text-lg font-bold">
+                      Savings Rs. 23,000
+                    </h2>
+                    <p className="text-gray-400 text-xs">
+                      Savings for this month so far
+                    </p>
+                  </div>
+
+                  <div className="ml-auto p-4 items-right w-full hover:border-3 hover:border-blue-400 transition">
+                    <span className="font-bold">Top Expenses</span>
+                    <div className="flex gap-3 ">
+                      {[1, 2, 3, 4].map((_, i) => (
+                        <div
+                          key={i}
+                          className="w-11 h-11 rounded-full border-2 border-gray-200 relative"
+                        >
+                          <div className="absolute inset-0 rounded-full border-2 border-orange-500 border-t-transparent border-l-transparent" />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <HomeIcon className="w-5 h-5 text-gray-700" />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 p-4 w-full ">
+                {/* ya 2 ota div maa matrae hover hunxa */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 p-4 w-full hover:border-3 hover:border-blue-400 transition ">
                   <div className="p-4 w-500 ">
                     <p className="text-gray-500 text-sm">Total Balance</p>
                     <h2 className="text-lg font-bold">Rs. 34,000</h2>
