@@ -45,7 +45,7 @@ export default function Dashboard() {
                       {[1, 2, 3, 4].map((_, i) => (
                         <div
                           key={i}
-                          className="w-11 h-11 rounded-full border-2 border-gray-200 flex items-center justify-center relative"
+                          className="w-8 h-8 rounded-full border-2 border-gray-200 flex items-center justify-center relative"
                         >
                           <div className="absolute inset-0  rounded-full border-3 border-orange-500 border-t-transparent border-l-transparent" />
                           <HomeIcon className=" rounded-full object-cover" />
