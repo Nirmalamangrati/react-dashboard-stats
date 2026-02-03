@@ -47,8 +47,8 @@ export default function Dashboard() {
                           key={i}
                           className="w-11 h-11 rounded-full border-2 border-gray-200 flex items-center justify-center relative"
                         >
-                          <div className="absolute inset-0 rounded-full border-2 border-orange-500 border-t-transparent border-l-transparent" />
-                          <HomeIcon className="text-gray-700 relative z-10 rounded-full" />
+                          <div className="absolute inset-0 w-9 h-9 rounded-full border-3 border-orange-500 border-t-transparent border-l-transparent" />
+                          <HomeIcon className="w-9 h-9 rounded-full object-cover" />
                         </div>
                       ))}
                     </div>
