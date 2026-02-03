@@ -33,7 +33,9 @@ export default function Dashboard() {
               <div className="grid grid-cols-1">
                 <div className="flex items-start mt-8 p-4 mb-6 w-full  ">
                   <div className="  hover:border-3 hover:border-blue-400 transition">
-                    <h2 className=" text-lg font-bold">Savings Rs. 23,000</h2>
+                    <h2 className="w-full text-lg font-bold">
+                      Savings Rs. 23,000
+                    </h2>
                     <p className="text-gray-400 text-xs">
                       Savings for this month so far
                     </p>
