@@ -45,10 +45,10 @@ export default function Dashboard() {
                       {[1, 2, 3, 4].map((_, i) => (
                         <div
                           key={i}
-                          className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full border-2 border-gray-200 flex items-center justify-center relative box-border"
+                          className="w-12 h-12 min-w-[48px] min-h-[48px] rounded-full border-2 border-gray-200 flex items-center justify-center relative box-border"
                         >
                           <div className="absolute inset-0 rounded-full border-2 border-orange-500 border-t-transparent border-l-transparent" />
-                          <HomeIcon className="w-4 h-4 text-gray-700 relative z-10" />
+                          <HomeIcon className="w-5 h-5 text-gray-700 relative z-10" />
                         </div>
                       ))}
                     </div>
