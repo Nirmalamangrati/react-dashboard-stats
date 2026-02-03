@@ -21,7 +21,7 @@ export default function Dashboard() {
             </p>
             <BellIcon className="w-6 h-6 text-gray-700 cursor-pointer" />
             <img
-              src="src/images/pic.jpg"
+              src="/pic.jpg"
               alt="Profile"
               className="w-9 h-9 rounded-full object-cover"
             />

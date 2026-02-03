@@ -12,8 +12,8 @@ export default function Sidebar() {
       <div className="flex justify-center py-4">
         <div className="font-bold text-lg">
           <img
-            src="src/images/Screenshot 2026-02-02 123311.png"
-            className="w-4 h-18 object-contain border-3 border-transparent hover:border-dotted hover:border-purple-500 transition "
+            src="Screenshot 2026-02-02 123311.png"
+            className="w-20 h-18 object-contain border-3 border-transparent hover:border-dotted hover:border-purple-500 transition "
           />
         </div>
       </div>
