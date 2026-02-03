@@ -48,7 +48,7 @@ export default function Dashboard() {
                           className="w-11 h-11 rounded-full border-2 border-gray-200 flex items-center justify-center relative"
                         >
                           <div className="absolute inset-0 rounded-full border-2 border-orange-500 border-t-transparent border-l-transparent" />
-                          <HomeIcon className="w-5 h-5 text-gray-700 relative z-10" />
+                          <HomeIcon className="text-gray-700 relative z-10 rounded-full" />
                         </div>
                       ))}
                     </div>
