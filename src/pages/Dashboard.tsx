@@ -58,7 +58,7 @@ export default function Dashboard() {
                 </div>
 
                 {/* ya 2 ota div maa matrae hover hunxa */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 p-4 w-full hover:border-3 hover:border-blue-400 transition ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 p-4  ">
                   <div className="p-4 w-500 ">
                     <p className="text-gray-500 text-sm">Total Balance</p>
                     <h2 className="text-lg font-bold">Rs. 34,000</h2>
